@@ -39,32 +39,32 @@ const Home = () => {
   const crops = [
     {
       name: "Terong",
-      image: "/assets/galeri-2.jpg",
+      image: "/assets/terong.jpg",
       description: "Kaya vitamin A, mudah ditanam di media pot atau polybag"
     },
     {
       name: "Mentimun",
-      image: "/assets/galeri-1.jpg",
+      image: "/assets/mentimun.jpg",
       description: "Sumber vitamin C tinggi, cocok untuk iklim tropis"
     },
     {
       name: "Tomat",
-      image: "/assets/galeri-1.jpg",
+      image: "/assets/tomat.jpg",
       description: "Mengandung likopen, dapat dipanen sepanjang tahun"
     },
     {
-      name: "Cabai",
-      image: "/assets/galeri-1.jpg",
+      name: "Cabai Rawit",
+      image: "/assets/cabai-rawit.jpg",
       description: "Bumbu dasar masakan, nilai ekonomis tinggi"
     },
     {
       name: "Kangkung",
-      image: "/assets/galeri-1.jpg",
+      image: "/assets/kangkung.jpg",
       description: "Pertumbuhan cepat, kaya zat besi dan vitamin"
     },
     {
       name: "Bayam",
-      image: "/assets/galeri-1.jpg",
+      image: "/assets/bayam.jpg",
       description: "Sumber folat dan vitamin K, mudah perawatan"
     }
   ];
