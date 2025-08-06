@@ -81,9 +81,14 @@ const Navbar: React.FC<NavbarProps> = ({
   };
 
   return (
-    <nav className={`fixed top-3 left-0 right-0 z-50 transition-transform duration-300 ${
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${
       isVisible ? 'translate-y-0' : '-translate-y-full'
-    } ${showBackground ? 'bg-white/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'} ${className}`}>
+    } ${
+      // Background conditional: white on mobile, original on desktop/tablet
+      showBackground 
+        ? 'bg-white/95 backdrop-blur-sm shadow-lg' 
+        : 'bg-white/95 shadow-lg lg:bg-transparent lg:shadow-none'
+    } ${className}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 lg:h-20">
           {/* Logo Section */}
@@ -177,7 +182,7 @@ const Navbar: React.FC<NavbarProps> = ({
           <div className="lg:hidden">
             <button
               onClick={toggleMobileMenu}
-              className="text-[#FEF7EF] hover:text-green-600 focus:outline-none focus:text-green-600 transition-colors duration-200 p-2"
+              className="text-green-700 hover:text-green-600 focus:outline-none focus:text-green-600 transition-colors duration-200 p-2"
               aria-label="Toggle mobile menu"
             >
               {isMobileMenuOpen ? (
