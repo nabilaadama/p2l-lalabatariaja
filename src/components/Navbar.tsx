@@ -176,6 +176,13 @@ const Navbar: React.FC<NavbarProps> = ({
             >
               Panduan
             </button>
+
+            <button 
+              onClick={() => navigateToPage('/bantuan')}
+              className="text-[#FEF7EF] hover:text-green-700 font-medium transition-colors duration-200 px-4 py-2 rounded-lg hover:bg-green-50/80"
+            >
+              Bantuan
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -236,6 +243,16 @@ const Navbar: React.FC<NavbarProps> = ({
                 className="block w-full text-left px-3 py-2 text-gray-600 hover:text-green-700 hover:bg-green-50 rounded-md transition-colors duration-200"
               >
                 Panduan
+              </button>
+
+              <button
+                onClick={() => {
+                  navigateToPage('/bantuan');
+                  toggleMobileMenu();
+                }}
+                className="block w-full text-left px-3 py-2 text-gray-600 hover:text-green-700 hover:bg-green-50 rounded-md transition-colors duration-200"
+              >
+                Bantuan
               </button>
             </div>
           </div>

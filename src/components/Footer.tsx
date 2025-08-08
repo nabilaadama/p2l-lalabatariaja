@@ -58,7 +58,7 @@ const Footer: React.FC<FooterProps> = ({ scrollToElement }) => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <Leaf className="w-8 h-8" />
-              <span className="text-xl font-bold">P2L Indonesia</span>
+              <span className="text-xl font-bold">Pekarangan Pangan Lestari</span>
             </div>
             <p className="text-green-100">
               Membangun ketahanan pangan keluarga melalui pemanfaatan pekarangan berkelanjutan.
@@ -86,6 +86,14 @@ const Footer: React.FC<FooterProps> = ({ scrollToElement }) => {
               </li>
               <li>
                 <button
+                  onClick={() => handleNavigation('tanaman', '/tanaman')}
+                  className="hover:text-white transition-colors text-left cursor-pointer"
+                >
+                  Tanaman
+                </button>
+              </li>
+              <li>
+                <button
                   onClick={() => handleNavigation('panduan', '/panduan')}
                   className="hover:text-white transition-colors text-left cursor-pointer"
                 >
@@ -94,10 +102,10 @@ const Footer: React.FC<FooterProps> = ({ scrollToElement }) => {
               </li>
               <li>
                 <button
-                  onClick={() => handleNavigation('tanaman', '/tanaman')}
+                  onClick={() => handleNavigation('bantuan', '/bantuan')}
                   className="hover:text-white transition-colors text-left cursor-pointer"
                 >
-                  Tanaman
+                  Bantuan
                 </button>
               </li>
             </ul>
