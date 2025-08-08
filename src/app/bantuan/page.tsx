@@ -2,13 +2,8 @@
 
 import React, { useState } from 'react';
 import {
-  Mail,
-  Phone,
   MessageCircle,
-  MapPin,
-  Clock,
   Send,
-  User,
   BookOpen,
   Lightbulb,
   Bug,
@@ -86,77 +81,57 @@ const Bantuan = () => {
     
   ];
 
-  const teamMembers = [
-    {
-      id: 1,
-      name: 'Fiqrie Ghalibaldi Gazali',
-      role: 'Koordinator Desa',
-      department: 'Agribisnis',
-      nim: 'G021221153',
-      image: '/assets/ayu.JPEG'
-    },
-    {
-      id: 2,
-      name: 'Nur Azizah RAMADHANI',
-      role: 'Sekretaris',
-      department: 'Ilmu dan Teknologi Pangan',
-      nim: 'G031221054',
-      image: '/assets/ayu.JPEG'
-    },
-    {
-      id: 3,
-      name: 'Nabila Hamdayani Adama',
-      role: 'Bendahara',
-      department: 'Teknik Informatika',
-      nim: 'D121221093',
-      image: '/assets/ayu.JPEG'
-    },
-    {
-      id: 4,
-      name: 'Ayu Rahayu',
-      role: 'Anggota',
-      department: 'Peternakan',
-      nim: 'I011221121',
-      image: '/assets/ayu.JPEG'
-    },
-    {
-      id: 5,
-      name: 'Asyam Nabil',
-      role: 'Anggota',
-      department: 'Peternakan',
-      nim: 'I011221029',
-      image: '/assets/ayu.JPEG'
-    },
-    {
-      id: 6,
-      name: 'Intan Nuraeni',
-      role: 'Anggota',
-      department: 'Administrasi Publik',
-      nim: 'E011221064',
-      image: '/assets/ayu.JPEG'
-    }
-  ];
+//   const teamMembers = [
+//     {
+//       id: 1,
+//       name: 'Fiqrie Ghalibaldi Gazali',
+//       role: 'Koordinator Desa',
+//       department: 'Agribisnis',
+//       nim: 'G021221153',
+//       image: '/assets/ayu.JPEG'
+//     },
+//     {
+//       id: 2,
+//       name: 'Nur Azizah RAMADHANI',
+//       role: 'Sekretaris',
+//       department: 'Ilmu dan Teknologi Pangan',
+//       nim: 'G031221054',
+//       image: '/assets/ayu.JPEG'
+//     },
+//     {
+//       id: 3,
+//       name: 'Nabila Hamdayani Adama',
+//       role: 'Bendahara',
+//       department: 'Teknik Informatika',
+//       nim: 'D121221093',
+//       image: '/assets/ayu.JPEG'
+//     },
+//     {
+//       id: 4,
+//       name: 'Ayu Rahayu',
+//       role: 'Anggota',
+//       department: 'Peternakan',
+//       nim: 'I011221121',
+//       image: '/assets/ayu.JPEG'
+//     },
+//     {
+//       id: 5,
+//       name: 'Asyam Nabil',
+//       role: 'Anggota',
+//       department: 'Peternakan',
+//       nim: 'I011221029',
+//       image: '/assets/ayu.JPEG'
+//     },
+//     {
+//       id: 6,
+//       name: 'Intan Nuraeni',
+//       role: 'Anggota',
+//       department: 'Administrasi Publik',
+//       nim: 'E011221064',
+//       image: '/assets/ayu.JPEG'
+//     }
+//   ];
 
-  const socialMedia = [
-    {
-      name: 'Instagram',
-      icon: <Instagram className="w-5 h-5" />,
-      url: 'https://instagram.com/kkn114lalabata',
-      color: 'bg-pink-100 text-pink-600 hover:bg-pink-200'
-    },
-    {
-      name: 'Facebook',
-      icon: <Facebook className="w-5 h-5" />,
-      url: 'https://facebook.com/kkn114lalabata',
-      color: 'bg-blue-100 text-blue-600 hover:bg-blue-200'
-    },
-    {
-      name: 'Twitter',
-      icon: <Twitter className="w-5 h-5" />,
-      url: 'https://twitter.com/kkn114lalabata',
-      color: 'bg-sky-100 text-sky-600 hover:bg-sky-200'
-    }
-  ];
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;

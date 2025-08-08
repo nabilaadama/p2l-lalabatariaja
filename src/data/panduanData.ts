@@ -10,10 +10,6 @@ import {
   DollarSign,
   Leaf,
   Users,
-  Clock,
-  CheckCircle,
-  AlertCircle,
-  Info
 } from 'lucide-react';
 import { GuideSection, FAQ, Tool, Benefit } from '../interfaces/types';
 
