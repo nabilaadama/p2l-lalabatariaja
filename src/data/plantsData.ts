@@ -169,11 +169,41 @@ export const plantsData: PlantsData = {
           'Panen daun muda secara berkala'
         ]
       }
+    },
+    {
+    id: 7,
+    name: 'Pakcoy',
+    scientificName: 'Brassica rapa subsp. chinensis',
+    image: '/assets/pakcoy.jpg',
+    description: 'Sayuran hijau dari keluarga sawi yang mudah ditanam dan kaya nutrisi. Cocok untuk pemula dan dapat dipanen dalam waktu singkat.',
+    benefits: [
+      'Kaya vitamin A, C, dan K',
+      'Tinggi folat dan kalsium',
+      'Mengandung antioksidan flavonoid',
+      'Baik untuk kesehatan tulang dan mata',
+      'Rendah kalori, tinggi serat'
+    ],
+    planting: {
+      season: 'Sepanjang tahun (optimal musim hujan)',
+      duration: '30-45 hari',
+      water: 'Rutin 2x sehari, jaga kelembaban',
+      sunlight: 'Partial shade (4-6 jam)',
+      spacing: '15-20 cm',
+      steps: [
+        'Semai benih di media semai atau langsung tanam',
+        'Siapkan media tanam gembur dan subur',
+        'Tanam bibit dengan jarak 15-20 cm',
+        'Siram rutin pagi dan sore',
+        'Berikan pupuk organik setiap 2 minggu',
+        'Lakukan penyiangan gulma secara rutin',
+        'Panen setelah 30-45 hari atau saat daun cukup besar'
+      ]
     }
+  }
   ],
   'sayuran-buah': [
     {
-      id: 7,
+      id: 8,
       name: 'Cabai Rawit',
       scientificName: 'Capsicum frutescens',
       image: '/assets/cabai-rawit.jpg',
@@ -201,7 +231,7 @@ export const plantsData: PlantsData = {
       }
     },
     {
-      id: 8,
+      id: 9,
       name: 'Cabai Besar',
       scientificName: 'Capsicum annuum',
       image: '/assets/cabai-besar.jpg',
@@ -229,7 +259,7 @@ export const plantsData: PlantsData = {
       }
     },
     {
-      id: 9,
+      id: 10,
       name: 'Tomat',
       scientificName: 'Solanum lycopersicum',
       image: '/assets/tomat.jpg',
@@ -257,7 +287,7 @@ export const plantsData: PlantsData = {
       }
     },
     {
-      id: 10,
+      id: 11,
       name: 'Terong',
       scientificName: 'Solanum melongena',
       image: '/assets/terong.jpg',
@@ -285,7 +315,7 @@ export const plantsData: PlantsData = {
       }
     },
     {
-      id: 11,
+      id: 12,
       name: 'Mentimun',
       scientificName: 'Cucumis sativus',
       image: '/assets/mentimun.jpg',
@@ -315,7 +345,7 @@ export const plantsData: PlantsData = {
   ],
   'rempah-bumbu': [
     {
-      id: 12,
+      id: 13,
       name: 'Jahe',
       scientificName: 'Zingiber officinale',
       image: '/assets/jahe.jpg',
@@ -343,7 +373,7 @@ export const plantsData: PlantsData = {
       }
     },
     {
-      id: 13,
+      id: 14,
       name: 'Kunyit',
       scientificName: 'Curcuma longa',
       image: '/assets/kunyit.jpg',
@@ -371,7 +401,7 @@ export const plantsData: PlantsData = {
       }
     },
     {
-      id: 14,
+      id: 15,
       name: 'Lengkuas',
       scientificName: 'Alpinia galanga',
       image: '/assets/lengkuas.jpg',
@@ -399,7 +429,7 @@ export const plantsData: PlantsData = {
       }
     },
     {
-      id: 15,
+      id: 16,
       name: 'Serai',
       scientificName: 'Cymbopogon citratus',
       image: '/assets/serai.jpg',
@@ -427,7 +457,7 @@ export const plantsData: PlantsData = {
       }
     },
     {
-      id: 16,
+      id: 17,
       name: 'Bawang Merah',
       scientificName: 'Allium ascalonicum',
       image: '/assets/bawang-merah.jpg',
@@ -457,7 +487,7 @@ export const plantsData: PlantsData = {
   ],
   'toga': [
     {
-      id: 17,
+      id: 18,
       name: 'Kencur',
       scientificName: 'Kaempferia galanga',
       image: '/assets/kencur.jpg',
@@ -485,7 +515,7 @@ export const plantsData: PlantsData = {
       }
     },
     {
-      id: 18,
+      id: 19,
       name: 'Temulawak',
       scientificName: 'Curcuma xanthorrhiza',
       image: '/assets/temulawak.jpg',
@@ -513,7 +543,7 @@ export const plantsData: PlantsData = {
       }
     },
     {
-      id: 19,
+      id: 20,
       name: 'Daun Sirih',
       scientificName: 'Piper betle',
       image: '/assets/daun-sirih.jpg',
@@ -541,7 +571,7 @@ export const plantsData: PlantsData = {
       }
     },
     {
-      id: 20,
+      id: 21,
       name: 'Sambung Nyawa',
       scientificName: 'Gynura procumbens',
       image: '/assets/sambung-nyawa.jpg',
@@ -569,7 +599,7 @@ export const plantsData: PlantsData = {
       }
     },
     {
-      id: 21,
+      id: 22,
       name: 'Lidah Buaya',
       scientificName: 'Aloe vera',
       image: '/assets/lidah-buaya.jpg',
@@ -599,7 +629,7 @@ export const plantsData: PlantsData = {
   ],
   'buah-pot': [
     {
-      id: 22,
+      id: 23,
       name: 'Pisang',
       scientificName: 'Musa spp.',
       image: '/assets/pisang.jpg',
@@ -627,7 +657,7 @@ export const plantsData: PlantsData = {
       }
     },
     {
-      id: 23,
+      id: 24,
       name: 'Pepaya',
       scientificName: 'Carica papaya',
       image: '/assets/pepaya.jpg',
@@ -655,7 +685,7 @@ export const plantsData: PlantsData = {
       }
     },
     {
-      id: 24,
+      id: 25,
       name: 'Jeruk Nipis',
       scientificName: 'Citrus aurantifolia',
       image: '/assets/jeruk-nipis.jpg',
@@ -683,7 +713,7 @@ export const plantsData: PlantsData = {
       }
     },
     {
-      id: 25,
+      id: 26,
       name: 'Jeruk Purut',
       scientificName: 'Citrus hystrix',
       image: '/assets/jeruk-purut.jpg',
@@ -711,7 +741,7 @@ export const plantsData: PlantsData = {
       }
     },
     {
-      id: 26,
+      id: 27,
       name: 'Markisa',
       scientificName: 'Passiflora edulis',
       image: '/assets/markisa.jpg',
@@ -741,7 +771,7 @@ export const plantsData: PlantsData = {
   ],
   'penutup-lahan': [
     {
-      id: 27,
+      id: 28,
       name: 'Kacang Panjang',
       scientificName: 'Vigna unguiculata',
       image: '/assets/kacang-panjang.jpg',
@@ -769,7 +799,7 @@ export const plantsData: PlantsData = {
       }
     },
     {
-      id: 28,
+      id: 29,
       name: 'Kacang Tanah',
       scientificName: 'Arachis hypogaea',
       image: '/assets/kacang-tanah.jpg',
@@ -797,7 +827,7 @@ export const plantsData: PlantsData = {
       }
     },
     {
-      id: 29,
+      id: 30,
       name: 'Ubi Jalar',
       scientificName: 'Ipomoea batatas',
       image: '/assets/ubi-jalar.jpg',
@@ -825,7 +855,7 @@ export const plantsData: PlantsData = {
       }
     },
     {
-      id: 30,
+      id: 31,
       name: 'Kenikir',
       scientificName: 'Cosmos caudatus',
       image: '/assets/kenikir.jpg',
@@ -853,7 +883,7 @@ export const plantsData: PlantsData = {
       }
     },
     {
-      id: 31,
+      id: 32,
       name: 'Daun Kelor',
       scientificName: 'Moringa oleifera',
       image: '/assets/daun-kelor.jpg',
