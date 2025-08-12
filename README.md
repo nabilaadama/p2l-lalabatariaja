@@ -163,7 +163,7 @@ NODE_ENV=development
    ```bash
    base64 -i service-account-key.json
    ```
-6. **Share Google Sheet** dengan service account email
+6. **Request Access** ke Google Sheet dan **Share** dengan service account email (lihat section [Google Sheets Access](#google-sheets-access))
 
 ### **5. Development Server**
 ```bash
@@ -178,10 +178,41 @@ Akses: `http://localhost:3000`
 
 ## 📊 Google Sheets Integration
 
+### **📋 Data Collection Sheet**
+**Production Sheet**: [Form Submissions - P2L Lalabata](https://docs.google.com/spreadsheets/d/1UGuXuVU6nFCzzBnPIWXO56fYGqBfs4NnhG4L1krMPxE/edit?gid=0#gid=0)
+
+> **⚠️ Access Required**: Sheet ini adalah private. Untuk mengakses dan melihat data submissions, silakan minta akses dengan mengirim email ke tim pengembang dengan menyertakan **Google Account Email** Anda.
+
+### **🔑 Request Access**
+Untuk mendapatkan akses ke Google Sheet data submissions:
+
+1. **Siapkan Google Account** Anda
+2. **Kirim Email Request** ke salah satu contact berikut:
+   - **Email**: nabilaa.adamaa@gmail.com
+   - **Whatsapp**: +62 852-2598-8870
+
+3. **Include Information**:
+   ```
+   Subject: Request Access - P2L Submissions Sheet
+   
+   Nama: [Your Name]
+   Institusi/Organisasi: [Your Organization]
+   Google Account Email: [your-email@gmail.com]
+   Keperluan: [Brief explanation]
+   ```
+
+4. **Access akan diberikan dalam 1x24 jam** setelah request
+
 ### **Sheet Structure**
 | Column A | Column B | Column C | Column D | Column E | Column F |
 |----------|----------|----------|----------|----------|----------|
-| Timestamp | Nama | Email | Topik | Pesan | Status |
+| Timestamp | Name | Email | Topic | Message | Status |
+
+**Sample Data**:
+```
+08/08/2024 15:30:45 | John Doe | john@email.com | saran-website | Saran untuk fitur baru | Pending
+08/08/2024 16:45:12 | Jane Smith | jane@email.com | tambah-informasi | Info tanaman baru | Pending
+```
 
 ### **API Endpoints**
 - `POST /api/submit-to-sheets` - Submit form data
@@ -194,6 +225,23 @@ Akses: `http://localhost:3000`
 - ✅ Loading states dan disabled form
 - ✅ Base64 encoded service account untuk security
 - ✅ Indonesian timestamp (WITA timezone)
+- ✅ **Real-time data collection** ke Google Sheet
+- ✅ **Access controlled** untuk data privacy
+
+### **📈 Data Analytics**
+Data yang terkumpul dapat digunakan untuk:
+- **Analisis feedback** dari masyarakat
+- **Trend topik** yang sering ditanyakan  
+- **Contact patterns** untuk improvement
+- **Response time tracking** tim support
+- **Program evaluation** dan development
+
+### **🔒 Data Privacy & Security**
+- ✅ **Controlled Access** - Sheet hanya dapat diakses oleh authorized personnel
+- ✅ **Encrypted Communication** - HTTPS untuk semua data transfer
+- ✅ **Service Account Security** - Google Cloud service account untuk authentication
+- ✅ **No Public Exposure** - Data submissions tidak exposed publicly
+- ✅ **GDPR Compliance Ready** - Data structure mendukung privacy requirements
 
 ---
 
@@ -299,11 +347,11 @@ interface Plant {
 
 ## 👥 Tim Pengembang
 
-
 ### **Tim KKN UNHAS Lalabata**
 - **Nabila Hamdayani Adama** 
 
 ### **Contact Information**
+- **Email**: nabilaa.adamaa@gmail.com
 - **WhatsApp**: +62 852-2598-8870
 - **Location**: Desa Lalabata Riaja, Kec. Lalabata, Kab. Soppeng
 
@@ -325,9 +373,17 @@ interface Plant {
 - Update documentation jika perlu
 
 ### **Issues & Suggestions**
-- Gunakan GitHub Issues untuk bug reports
-- Gunakan contact form di website untuk suggestions
-- Hubungi langsung ke tim untuk urgent matters
+- Gunakan **GitHub Issues** untuk bug reports dan feature requests
+- Gunakan **contact form** di website untuk program suggestions
+- Email langsung ke tim untuk urgent matters
+- **Request data access** melalui email untuk research purposes
+
+### **📊 Data Contributions**
+Untuk berkontribusi data atau analytics:
+- Submit **tanaman baru** via contact form website
+- Share **success stories** melalui email
+- Request **collaboration** untuk research projects
+- Propose **program improvements** based on data insights
 
 ---
 
